@@ -1,0 +1,28 @@
+{
+  "button": {
+    "primary": {
+      "background":          { "$value": "{primary}",            "$type": "color" },
+      "backgroundHover":     { "$value": "{primary}",            "$type": "color", "$description": "Slightly darker on hover (handled via CSS opacity or filter)" },
+      "backgroundDisabled":  { "$value": "{muted}",              "$type": "color" },
+      "text":                { "$value": "{primary-foreground}",  "$type": "color" },
+      "radius":              { "$value": "{radius.md}",          "$type": "dimension" },
+      "paddingX":            { "$value": "{spacing.4}",          "$type": "dimension" },
+      "paddingY":            { "$value": "{spacing.2}",          "$type": "dimension" }
+    },
+    "secondary": {
+      "background":          { "$value": "{secondary}",            "$type": "color" },
+      "backgroundHover":     { "$value": "{secondary}",            "$type": "color" },
+      "text":                { "$value": "{secondary-foreground}",  "$type": "color" },
+      "border":              { "$value": "{border}",               "$type": "color" }
+    },
+    "ghost": {
+      "background":          { "$value": "transparent",            "$type": "color" },
+      "backgroundHover":     { "$value": "{accent}",               "$type": "color" },
+      "text":                { "$value": "{accent-foreground}",    "$type": "color" }
+    },
+    "destructive": {
+      "background":          { "$value": "{destructive}",            "$type": "color" },
+      "text":                { "$value": "{destructive-foreground}",  "$type": "color" }
+    }
+  }
+}

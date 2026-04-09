@@ -1,0 +1,12 @@
+{
+  "z": {
+    "dropdown":       { "$value": 50,  "$type": "number", "$description": "Dropdown menus" },
+    "sticky":         { "$value": 100, "$type": "number", "$description": "Sticky headers" },
+    "fixed":          { "$value": 200, "$type": "number", "$description": "Fixed elements" },
+    "modal-backdrop": { "$value": 300, "$type": "number", "$description": "Modal backdrop/overlay" },
+    "modal":          { "$value": 400, "$type": "number", "$description": "Modal/Dialog content" },
+    "popover":        { "$value": 500, "$type": "number", "$description": "Popover" },
+    "tooltip":        { "$value": 600, "$type": "number", "$description": "Tooltip" },
+    "toast":          { "$value": 700, "$type": "number", "$description": "Toast notification" }
+  }
+}

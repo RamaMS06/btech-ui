@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Token generated outputs are committed for developer convenience
+# Style Dictionary regenerates these from src/ JSON files via 'pnpm build:tokens'
+# tokens/generated/ is tracked in git so UI packages can import immediately
+
+# Turbo
+.turbo/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Flutter
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock
+ui/flutter/build/
+apps/playground-flutter/build/
+tokens/generated/flutter/build/
+
+# Storybook
+storybook-static/

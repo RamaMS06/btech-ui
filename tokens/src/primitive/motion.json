@@ -1,0 +1,16 @@
+{
+  "duration": {
+    "fastest": { "$value": "50ms",  "$type": "duration", "$description": "Micro-interactions" },
+    "fast":    { "$value": "100ms", "$type": "duration", "$description": "Hover states" },
+    "normal":  { "$value": "200ms", "$type": "duration", "$description": "Default transitions" },
+    "slow":    { "$value": "300ms", "$type": "duration", "$description": "Complex animations" },
+    "slower":  { "$value": "500ms", "$type": "duration", "$description": "Page transitions" }
+  },
+  "ease": {
+    "default": { "$value": "cubic-bezier(0.4, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "General purpose" },
+    "in":      { "$value": "cubic-bezier(0.4, 0, 1, 1)",   "$type": "cubicBezier", "$description": "Exit animations" },
+    "out":     { "$value": "cubic-bezier(0, 0, 0.2, 1)",   "$type": "cubicBezier", "$description": "Enter animations" },
+    "in-out":  { "$value": "cubic-bezier(0.4, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "Symmetric" },
+    "bounce":  { "$value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "$type": "cubicBezier", "$description": "Playful bounce" }
+  }
+}

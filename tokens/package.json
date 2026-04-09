@@ -1,0 +1,34 @@
+{
+  "name": "@btech/tokens",
+  "version": "0.1.0",
+  "description": "Btech Design System - Design Tokens",
+  "type": "module",
+  "scripts": {
+    "build": "tsx config/sd.config.ts",
+    "clean": "rm -rf generated"
+  },
+  "exports": {
+    "./css": "./generated/web/tokens.css",
+    "./scss": "./generated/web/tokens.scss",
+    "./js": {
+      "import": "./generated/web/tokens.mjs",
+      "types": "./generated/web/tokens.d.ts"
+    },
+    ".": {
+      "import": "./generated/web/tokens.mjs",
+      "types": "./generated/web/tokens.d.ts"
+    },
+    "./json": "./src/",
+    "./json/primitive/*": "./src/primitive/*",
+    "./json/semantic/*": "./src/semantic/*",
+    "./json/component/*": "./src/component/*"
+  },
+  "files": [
+    "generated/**",
+    "src/**"
+  ],
+  "devDependencies": {
+    "style-dictionary": "^4.0.0",
+    "tsx": "^4.7.0"
+  }
+}

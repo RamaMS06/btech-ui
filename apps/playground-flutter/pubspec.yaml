@@ -1,0 +1,17 @@
+name: playground_flutter
+description: Internal playground app for btech_ui testing
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  btech_ui:
+    path: ../../ui/flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0

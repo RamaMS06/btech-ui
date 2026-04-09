@@ -1,0 +1,52 @@
+name: Flutter CI
+
+on:
+  pull_request:
+    paths:
+      - 'ui/flutter/**'
+      - 'tokens/**'
+  push:
+    branches: [main]
+    paths:
+      - 'ui/flutter/**'
+      - 'tokens/**'
+
+jobs:
+  flutter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Build tokens first so generated Dart package exists
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install Node dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build tokens
+        run: pnpm build:tokens
+
+      # Flutter setup
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'
+          cache: true
+
+      - name: Install Flutter dependencies
+        run: cd ui/flutter && flutter pub get
+
+      - name: Analyze
+        run: cd ui/flutter && flutter analyze
+
+      - name: Run tests
+        run: cd ui/flutter && flutter test
+
+      - name: Golden test regression check
+        run: cd ui/flutter && flutter test test/components/*_golden_test.dart

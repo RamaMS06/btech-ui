@@ -1,0 +1,63 @@
+{
+  "$description": "GENERATED FILE - DO NOT EDIT. Tokens Studio compatible format.",
+  "color": {
+    "blue": {
+      "50": { "value": "#eff6ff", "type": "color" },
+      "500": { "value": "#3b82f6", "type": "color" },
+      "600": { "value": "#2563eb", "type": "color" },
+      "700": { "value": "#1d4ed8", "type": "color" }
+    },
+    "neutral": {
+      "0": { "value": "#ffffff", "type": "color" },
+      "50": { "value": "#fafaf9", "type": "color" },
+      "100": { "value": "#f4f4f5", "type": "color" },
+      "200": { "value": "#e4e4e7", "type": "color" },
+      "500": { "value": "#71717a", "type": "color" },
+      "800": { "value": "#27272a", "type": "color" },
+      "900": { "value": "#18181b", "type": "color" },
+      "950": { "value": "#09090b", "type": "color" }
+    },
+    "slate": {
+      "950": { "value": "#0f172a", "type": "color" }
+    },
+    "green": {
+      "500": { "value": "#22c55e", "type": "color" },
+      "600": { "value": "#16a34a", "type": "color" }
+    },
+    "red": {
+      "500": { "value": "#ef4444", "type": "color" },
+      "600": { "value": "#dc2626", "type": "color" }
+    },
+    "yellow": {
+      "500": { "value": "#eab308", "type": "color" },
+      "600": { "value": "#f59e0b", "type": "color" }
+    }
+  },
+  "semantic": {
+    "background": { "value": "{color.neutral.0}", "type": "color" },
+    "primary": { "value": "{color.slate.950}", "type": "color" },
+    "secondary": { "value": "{color.neutral.100}", "type": "color" },
+    "muted": { "value": "{color.neutral.100}", "type": "color" },
+    "destructive": { "value": "{color.red.600}", "type": "color" },
+    "success": { "value": "{color.green.600}", "type": "color" },
+    "warning": { "value": "{color.yellow.600}", "type": "color" },
+    "info": { "value": "{color.blue.600}", "type": "color" },
+    "border": { "value": "{color.neutral.200}", "type": "color" },
+    "ring": { "value": "{color.neutral.500}", "type": "color" }
+  },
+  "spacing": {
+    "0": { "value": "0", "type": "dimension" },
+    "1": { "value": "4", "type": "dimension" },
+    "2": { "value": "8", "type": "dimension" },
+    "3": { "value": "12", "type": "dimension" },
+    "4": { "value": "16", "type": "dimension" },
+    "6": { "value": "24", "type": "dimension" },
+    "8": { "value": "32", "type": "dimension" }
+  },
+  "radius": {
+    "base": { "value": "10", "type": "dimension" },
+    "sm": { "value": "6", "type": "dimension" },
+    "md": { "value": "8", "type": "dimension" },
+    "full": { "value": "9999", "type": "dimension" }
+  }
+}

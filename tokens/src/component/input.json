@@ -1,0 +1,20 @@
+{
+  "input": {
+    "background":  { "$value": "{background}",  "$type": "color" },
+    "border":      { "$value": "{input}",       "$type": "color" },
+    "borderFocus": { "$value": "{ring}",        "$type": "color" },
+    "text":        { "$value": "{background-foreground}", "$type": "color" },
+    "placeholder": { "$value": "{muted-foreground}",      "$type": "color" },
+    "radius":      { "$value": "{radius.md}",   "$type": "dimension" },
+    "paddingX":    { "$value": "{spacing.3}",   "$type": "dimension" },
+    "paddingY":    { "$value": "{spacing.2}",   "$type": "dimension" },
+    "error": {
+      "border":    { "$value": "{destructive}", "$type": "color" },
+      "text":      { "$value": "{destructive}", "$type": "color" }
+    },
+    "disabled": {
+      "background": { "$value": "{muted}",            "$type": "color" },
+      "text":       { "$value": "{muted-foreground}",  "$type": "color" }
+    }
+  }
+}

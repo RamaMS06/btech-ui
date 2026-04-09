@@ -1,0 +1,345 @@
+{
+  "$description": "Semantic color roles — flat naming matching CSS output. Light in $value, dark in $extensions.dark",
+  "background": {
+    "$value": "{color.neutral.0}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.950}"
+      }
+    }
+  },
+  "background-foreground": {
+    "$value": "{color.neutral.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "card": {
+    "$value": "{color.neutral.0}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.900}"
+      }
+    }
+  },
+  "card-foreground": {
+    "$value": "{color.neutral.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "popover": {
+    "$value": "{color.neutral.0}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.900}"
+      }
+    }
+  },
+  "popover-foreground": {
+    "$value": "{color.neutral.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "primary": {
+    "$value": "{color.slate.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "primary-foreground": {
+    "$value": "{color.neutral.50}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.slate.950}"
+      }
+    }
+  },
+  "secondary": {
+    "$value": "{color.neutral.100}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "secondary-foreground": {
+    "$value": "{color.slate.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "muted": {
+    "$value": "{color.neutral.100}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "muted-foreground": {
+    "$value": "{color.neutral.500}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.400}"
+      }
+    }
+  },
+  "accent": {
+    "$value": "{color.neutral.100}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "accent-foreground": {
+    "$value": "{color.slate.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "destructive": {
+    "$value": "{color.red.600}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.red.500}"
+      }
+    }
+  },
+  "destructive-foreground": {
+    "$value": "{color.neutral.50}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "success": {
+    "$value": "{color.green.600}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.green.500}"
+      }
+    }
+  },
+  "success-foreground": {
+    "$value": "{color.neutral.50}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.950}"
+      }
+    }
+  },
+  "warning": {
+    "$value": "{color.yellow.600}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.yellow.500}"
+      }
+    }
+  },
+  "warning-foreground": {
+    "$value": "{color.slate.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.950}"
+      }
+    }
+  },
+  "info": {
+    "$value": "{color.blue.600}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.blue.500}"
+      }
+    }
+  },
+  "info-foreground": {
+    "$value": "{color.neutral.50}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "border": {
+    "$value": "{color.neutral.200}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "input": {
+    "$value": "{color.neutral.200}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "ring": {
+    "$value": "{color.neutral.500}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.500}"
+      }
+    }
+  },
+  "sidebar": {
+    "$value": "{color.neutral.50}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.900}"
+      }
+    }
+  },
+  "sidebar-foreground": {
+    "$value": "{color.neutral.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "sidebar-border": {
+    "$value": "{color.neutral.200}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "sidebar-ring": {
+    "$value": "{color.neutral.500}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.500}"
+      }
+    }
+  },
+  "sidebar-accent": {
+    "$value": "{color.neutral.100}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.800}"
+      }
+    }
+  },
+  "sidebar-accent-foreground": {
+    "$value": "{color.slate.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "sidebar-primary": {
+    "$value": "{color.slate.950}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.neutral.50}"
+      }
+    }
+  },
+  "sidebar-primary-foreground": {
+    "$value": "{color.neutral.50}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.slate.950}"
+      }
+    }
+  },
+  "chart-1": {
+    "$value": "{color.chart.1-light}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.chart.1-dark}"
+      }
+    }
+  },
+  "chart-2": {
+    "$value": "{color.chart.2-light}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.chart.2-dark}"
+      }
+    }
+  },
+  "chart-3": {
+    "$value": "{color.chart.3-light}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.chart.3-dark}"
+      }
+    }
+  },
+  "chart-4": {
+    "$value": "{color.chart.4-light}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.chart.4-dark}"
+      }
+    }
+  },
+  "chart-5": {
+    "$value": "{color.chart.5-light}",
+    "$type": "color",
+    "$extensions": {
+      "dark": {
+        "$value": "{color.chart.5-dark}"
+      }
+    }
+  }
+}
