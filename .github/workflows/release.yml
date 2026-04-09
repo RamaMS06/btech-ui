@@ -1,7 +1,9 @@
 name: Release
 
 on:
-  push:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
     branches: [main]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
@@ -13,6 +15,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,8 +30,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: pnpm build
+      - name: Build tokens
+        run: pnpm --filter @btech/tokens run build
+
+      - name: Build UI packages
+        run: pnpm --filter "@btech/*" --filter "!@btech/tokens" run build
 
       - name: Create Release Pull Request or Publish
         uses: changesets/action@v1

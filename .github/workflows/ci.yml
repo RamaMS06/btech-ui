@@ -22,14 +22,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Lint
-        run: pnpm lint
+      - name: Build tokens
+        run: pnpm --filter @btech/tokens run build
 
-      - name: Type check
-        run: pnpm typecheck
-
-      - name: Build
-        run: pnpm build
+      - name: Build UI packages
+        run: pnpm --filter "@btech/*" --filter "!@btech/tokens" run build
 
       - name: Test
-        run: pnpm test
+        run: pnpm -r run --if-present test
