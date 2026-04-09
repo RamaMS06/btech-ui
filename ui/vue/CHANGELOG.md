@@ -1,5 +1,13 @@
 # @btech/vue-ui
 
+## 0.2.1
+
+### Patch Changes
+
+- Configure GitHub Packages publishing and fix CI workflows
+- Updated dependencies
+  - @btech/tokens@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes

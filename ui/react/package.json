@@ -1,6 +1,6 @@
 {
   "name": "@btech/react-ui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Btech Design System - React 18 Component Library",
   "type": "module",
   "main": "./dist/index.cjs",

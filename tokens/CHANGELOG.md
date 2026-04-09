@@ -1,5 +1,11 @@
 # @btech/tokens
 
+## 0.2.1
+
+### Patch Changes
+
+- Configure GitHub Packages publishing and fix CI workflows
+
 ## 0.2.0
 
 ### Minor Changes
