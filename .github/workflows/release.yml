@@ -27,12 +27,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build tokens
-        run: pnpm --filter @btech/tokens run build
-
-      - name: Build UI packages
-        run: pnpm --filter "@btech/*" --filter "!@btech/tokens" run build
-
       - name: Test
         run: pnpm -r run --if-present test
 
