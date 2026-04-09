@@ -17,6 +17,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  btech_tokens:
+    dependency: transitive
+    description:
+      path: "../../../tokens/generated/flutter"
+      relative: true
+    source: path
+    version: "0.1.0"
   btech_ui:
     dependency: "direct main"
     description:

@@ -8,7 +8,7 @@ class BtechTheme {
     return ThemeData(
       useMaterial3: true,
       fontFamily: AppTokens.fontFamilySans,
-      colorScheme: ColorScheme.light(
+      colorScheme: const ColorScheme.light(
         primary: AppTokens.primary,
         onPrimary: AppTokens.primaryForeground,
         secondary: AppTokens.secondary,

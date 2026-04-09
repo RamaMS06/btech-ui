@@ -14,6 +14,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "btech_tokens",
+      "rootUri": "../../../../tokens/generated/flutter",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "btech_ui",
       "rootUri": "../../",
       "packageUri": "lib/",
@@ -170,7 +176,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2026-04-09T03:49:12.618480Z",
+  "generated": "2026-04-09T06:54:34.805387Z",
   "generator": "pub",
   "generatorVersion": "3.6.2",
   "flutterRoot": "file:///Users/p-rama.msugiyanto/fvm/versions/3.27.4",
