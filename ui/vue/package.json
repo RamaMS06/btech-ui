@@ -17,6 +17,14 @@
   "files": [
     "dist/**"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RamaMS06/btech-ui.git",
+    "directory": "ui/vue"
+  },
   "scripts": {
     "build": "vite build",
     "test": "vitest run",

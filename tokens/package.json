@@ -27,6 +27,14 @@
     "generated/**",
     "src/**"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RamaMS06/btech-ui.git",
+    "directory": "tokens"
+  },
   "devDependencies": {
     "style-dictionary": "^4.0.0",
     "tsx": "^4.7.0"
