@@ -1,9 +1,7 @@
 name: Release
 
 on:
-  workflow_run:
-    workflows: [CI]
-    types: [completed]
+  push:
     branches: [main]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
@@ -13,9 +11,30 @@ permissions:
   packages: write
 
 jobs:
-  release:
+  ci:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build tokens
+        run: pnpm --filter @btech/tokens run build
+
+      - name: Build UI packages
+        run: pnpm --filter "@btech/*" --filter "!@btech/tokens" run build
+
+  publish:
+    needs: ci
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
